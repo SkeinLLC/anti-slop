@@ -7,6 +7,9 @@ Anti-Slop is a VS Code extension and a CLI. It scans markdown and plain text for
 
 If you publish anything written with an LLM in the loop, this exists for you.
 
+![Anti-Slop catching AI tells in a draft](images/screenshot.png)
+
+
 ## Why this exists
 
 Reader confidence in AI-influenced writing has collapsed. Carnegie Mellon's 2025 study, Buffer's 52-million-post analysis, and the Wikipedia *Signs of AI Writing* project all point to the same conclusion: there's a measurable lexical and structural fingerprint to LLM output, and readers spot it quickly. Once spotted, they stop trusting the content, even if the content is good.
@@ -152,3 +155,4 @@ anti-slop/
 # anti-slop
 Open Source anti-slop validator
 >>>>>>> 9cf400ba6701e20a2cc03badc3790efdc1c6a2c4
+
