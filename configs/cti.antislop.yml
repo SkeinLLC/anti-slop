@@ -1,0 +1,31 @@
+# CTI / threat-intelligence preset. Layers on extra vendor-marketing
+# vocabulary the default preset misses, and re-enables a handful of
+# technical terms-of-art the default preset bans.
+
+preset: cti
+
+allowedVocab:
+  # Engineering / security terms-of-art.
+  - robust
+  - optimize
+  - optimizes
+  - leverage   # CTI sometimes needs "leverage CVE-X"; explicit allowance
+  - integrated
+
+bannedVocab:
+  - dwell
+  - dwell-time
+  - cyber
+
+bannedPhrases:
+  - "ever-evolving cyber threat landscape"
+  - "sophisticated nation-state actor"
+  - "this incident underscores"
+
+rules:
+  pattern.negativeParallelism:
+    severity: error
+  pattern.todayOpener:
+    severity: error
+  punctuation.emDash:
+    severity: error

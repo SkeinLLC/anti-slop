@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="word" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E0E7FF"/>
+      <stop offset="100%" stop-color="#A5B4FC"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="128" height="128" rx="24" ry="24" fill="url(#bg)"/>
+  <text x="64" y="74"
+        text-anchor="middle"
+        font-family="DejaVu Sans, Lato, sans-serif"
+        font-weight="900"
+        font-size="28"
+        letter-spacing="0"
+        fill="url(#word)">slop</text>
+  <circle cx="64" cy="64" r="42" fill="none" stroke="#EF4444" stroke-width="9"/>
+  <line x1="34" y1="34" x2="94" y2="94" stroke="#EF4444" stroke-width="9" stroke-linecap="round"/>
+</svg>

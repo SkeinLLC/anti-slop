@@ -1,0 +1,78 @@
+# Default Anti-Slop config. Drop this file at the repo root as `.antislop.yml`
+# and the linter picks it up. Anything you set here merges with the chosen
+# preset; allowedVocab subtracts from the banned set.
+
+preset: default
+
+# Per-rule overrides. Default severity is "warning".
+# Set enabled: false to silence a rule entirely.
+rules:
+  vocab.banned:
+    enabled: true
+    severity: warning
+  phrases.banned:
+    enabled: true
+    severity: warning
+  openers.banned:
+    enabled: true
+    severity: warning
+  punctuation.emDash:
+    enabled: true
+    severity: warning
+  punctuation.exclamation:
+    enabled: true
+    severity: info
+  punctuation.ellipsis:
+    enabled: true
+    severity: info
+  structure.parataxis:
+    enabled: true
+    severity: info
+  structure.uniformLength:
+    enabled: true
+    severity: info
+  structure.ruleOfThree:
+    enabled: true
+    severity: info
+  pattern.negativeParallelism:
+    enabled: true
+    severity: error
+  pattern.cutoffDisclaimer:
+    enabled: true
+    severity: warning
+  pattern.todayOpener:
+    enabled: true
+    severity: warning
+  pattern.metaCommentary:
+    enabled: true
+    severity: warning
+  pattern.engagementBait:
+    enabled: true
+    severity: warning
+  pattern.copulativeAvoidance:
+    enabled: true
+    severity: info
+  pattern.falseRange:
+    enabled: true
+    severity: info
+
+# Budgets
+maxEmDashesPer500Words: 1
+maxExclamationsPer1000Words: 1
+maxEllipsesPerPiece: 1
+
+# Structural thresholds
+maxConsecutiveShortSentences: 3
+shortSentenceWordThreshold: 6
+ruleOfThreeLimit: 1
+
+# Extra words on top of the preset list.
+bannedVocab: []
+
+# Allow words back through that the preset bans (e.g. "robust" for an
+# engineering README where it's a term of art).
+allowedVocab: []
+
+bannedPhrases: []
+
+bannedOpeners: []

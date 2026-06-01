@@ -1,0 +1,21 @@
+# Marketing preset. Adds the most flagrant marketing-copy slop on top of the
+# defaults. Use this for landing pages, ads, social posts, About pages.
+
+preset: marketing
+
+bannedVocab: []
+
+bannedPhrases:
+  - "we're more than just a"
+  - "we believe in"
+  - "our mission is to"
+  - "join us on this journey"
+  - "founded with the vision of"
+
+rules:
+  pattern.negativeParallelism:
+    severity: error
+  pattern.todayOpener:
+    severity: error
+  punctuation.emDash:
+    severity: warning
