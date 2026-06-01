@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Anti-Slop
 
 A linter for the parts of your writing that read like ChatGPT wrote them.
@@ -147,3 +148,7 @@ anti-slop/
     engine/       # types, config loader, tokenizer, lint runner
     rules/        # vocabulary, punctuation, structure, patterns
     vscode/       # VS Code extension entry, di
+=======
+# anti-slop
+Open Source anti-slop validator
+>>>>>>> 9cf400ba6701e20a2cc03badc3790efdc1c6a2c4
