@@ -2,7 +2,7 @@
   "name": "anti-slop",
   "displayName": "Anti-Slop",
   "description": "Flags AI-slop patterns in markdown and plain text: banned vocab, em dashes, negative parallelisms, rule of three, parataxis runs, and the rest.",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "publisher": "SkeinLLC",
   "license": "MIT",
   "engines": {
