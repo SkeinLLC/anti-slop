@@ -26,7 +26,7 @@ antislop --help
 Or run from source:
 
 ```bash
-git clone https://github.com/paulgoodwin/anti-slop.git
+git clone https://github.com/SkeinLLC/anti-slop.git
 cd anti-slop
 npm install
 npm run build
@@ -146,29 +146,4 @@ anti-slop/
   src/
     engine/       # types, config loader, tokenizer, lint runner
     rules/        # vocabulary, punctuation, structure, patterns
-    vscode/       # VS Code extension entry, diagnostics, code actions
-    cli.ts        # CLI
-  configs/        # default.antislop.yml, cti, marketing
-  tests/          # vitest specs covering every rule
-  bin/antislop.js # CLI shim
-  docs/
-```
-
-## Test
-
-```bash
-npm install
-npm test
-```
-
-53 unit specs cover every rule, and the engine makes no network calls during a lint pass.
-
-## License
-
-MIT. See the LICENSE file for the full text.
-
-## Related
-
-The companion `so-what-cli` is the audience-rewriter that pairs with this linter. The forthcoming `icd203-lint` handles confidence-language and sourcing checks in analytic writing.
-
-The studies that anchor the rule set: Carnegie Mellon 2025 on LLM lexical fingerprints, Wikipedia's Signs of AI Writing project, and Buffer's 52M-post analysis from 2025. If you have additions backed by empirical work, PRs welcome on the rule definitions in `src/rules/` and the source list in `src/engine/defaults.ts`.
+    vscode/       # VS Code extension entry, di
