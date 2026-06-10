@@ -145,6 +145,10 @@ If a rule fires on something it shouldn't, please file an issue with the source 
 ## Project layout
 
 ```
+anti-slop/
+  src/
+    engine/       # types, config loader, tokenizer, lint runner
+    rules/        # vocabulary, punctuation, structure, patterns
     vscode/       # VS Code extension entry, diagnostics, code actions
     cli.ts        # CLI
   configs/        # default.antislop.yml, cti, marketing
